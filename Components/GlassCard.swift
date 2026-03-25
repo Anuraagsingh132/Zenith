@@ -56,7 +56,7 @@ struct GlassCard<Content: View>: View {
             Color(white: 0.15)
         } else {
             ZStack {
-                elevation.material
+                Rectangle().fill(elevation.material)
                 // Subtle inner glow at the top
                 LinearGradient(
                     colors: [Color.white.opacity(0.06), .clear],

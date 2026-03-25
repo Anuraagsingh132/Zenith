@@ -62,7 +62,7 @@ struct FluidButtonStyle: ButtonStyle {
                 )
             }
         case .secondary:
-            Material.ultraThinMaterial as! AnyView
+            AnyView(Rectangle().fill(.ultraThinMaterial))
         }
     }
 }
